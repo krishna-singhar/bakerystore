@@ -1,0 +1,111 @@
+
+<?php echo '<script type="text/javascript"> 
+const aa = document.getElementById(64);
+// timeout format min * seconds * 1000
+setTimeout(() => {
+    aa.style.display="none";
+  }, 1 * 10  * 1000);
+  setTimeout(() => {
+    document.getElementById(58).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(59).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(60).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(61).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(62).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(63).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+  document.getElementById(64).style.display="none";
+}, 1 * 10 * 1000);
+setTimeout(() => {
+  document.getElementById(65).style.display="none";
+}, 1 * 10 * 1000);
+setTimeout(() => {
+  document.getElementById(66).style.display="none";
+}, 1 * 10 * 1000);
+setTimeout(() => {
+  document.getElementById(67).style.display="none";
+}, 1 * 10 * 1000);
+setTimeout(() => {
+    document.getElementById(68).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(69).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(70).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(71).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(72).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(73).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(74).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(75).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(76).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(77).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(78).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(79).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(80).style.display="none";
+  }, 1 * 10 * 1000);
+  setTimeout(() => {
+    document.getElementById(81).style.display="none";
+  }, 1 * 10 * 1000);
+// Disable the button after the timeout has elapsed
+
+</script>';
+?>				
+
+///
+const button = document.getElementById("myButton");
+
+// Set the timeout for 30 minutes (in milliseconds)
+const timeout = 30 * 60 * 1000;
+
+// Disable the button after the timeout has elapsed
+setTimeout(() => {
+  button.disabled = true;
+}, timeout);
+
+
+
+var time=document.getElementsByClassName("date")
+ 
+var timings=30;
+var i=0;
+    var myInterval = setInterval(Timeout, 1000);
+   function Timeout(){
+     if((timings*60-i)%60>=10){
+       time[0].innerHTML=parseInt(`${(timings*60-i)/60}`)+":"+`${(timings*60-i)%60}`;
+     }
+     else{
+       time[0].innerHTML=parseInt(`${(timings*60-i)/60}`)+":0"+`${(timings*60-i)%60}`;
+     }
+i++;
+   }
